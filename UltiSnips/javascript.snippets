@@ -2,10 +2,18 @@ priority 1
 
 snippet rfc
 const ${1:ComponentName} = (${2:props}) => {
-  return (
-    ${3:jsx}
-  );
-};
+  return ${3:jsx};
+}
+
+export default $1;
+endsnippet
+
+snippet rcc
+class ${1:ComponentName} extends Component {
+  render() {
+    return ${2:jsx};
+  }
+}
 
 export default $1;
 endsnippet
